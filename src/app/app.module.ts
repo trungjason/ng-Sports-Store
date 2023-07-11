@@ -8,6 +8,7 @@ import { CartDetailComponent } from './store/CartDetail/cart-detail.component';
 import { CheckoutComponent } from './store/Checkout/checkout.component';
 import { RouterModule } from '@angular/router';
 import { StoreFirstGuard } from './guards/storeFirst.guard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const route = [
   {
@@ -36,7 +37,7 @@ const route = [
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, StoreModule, RouterModule.forRoot(route)],
+  imports: [BrowserModule, StoreModule, RouterModule.forRoot(route), BrowserAnimationsModule],
   providers: [StoreFirstGuard],
   bootstrap: [AppComponent],
 })

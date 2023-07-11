@@ -39,7 +39,7 @@ export class RestDataSource {
   }
 
   saveProduct(product: Product): Observable<Product> {
-    return this.http.post(
+    return this.http.post<Product>(
       this.baseUrl + 'products',
       product,
       this.getOptions()

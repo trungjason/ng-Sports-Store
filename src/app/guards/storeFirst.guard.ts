@@ -16,7 +16,6 @@ export class StoreFirstGuard {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): boolean {
-    console.log(this.firstNavigation);
     if (this.firstNavigation) {
       this.firstNavigation = false;
 
